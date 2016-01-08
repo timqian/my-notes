@@ -1,3 +1,2 @@
-# my-thoughts
-Recode my thoughts
+# [My thoughts](https://github.com/timqian/my-thoughts/issues)
 
