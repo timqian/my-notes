@@ -1,2 +1,2 @@
-# [My thoughts here](https://github.com/timqian/my-thoughts/issues)
+# [My thoughts here](https://github.com/timqian/my-notes/issues)
 
