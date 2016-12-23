@@ -1,9 +1,4 @@
----
-layout: post
-title: 基于密度泛函理论(DFT)，使用matlab求解原子状态
-tags: 
-- quantum mechanics
----
+# 基于密度泛函理论(DFT)，使用matlab求解原子状态
 
 * 使用自洽场方法求解 Kohn-Sham 方程
 
@@ -64,7 +59,7 @@ $$
 
 主程序：
 
-{% highlight matlab %}
+```matlab
 %For double occupation
 N = 4;  % num of enectrons
 g = 50  % num of lattices
@@ -124,11 +119,11 @@ for iter = 1:5 %Do the main loop not for ever
 end
 %scatter3(X(1:10:g3),Y(1:10:g3),Z(1:10:g3),n(1:10:g3)*1000);
 scatter3(X,Y,Z,n*4);  //show electron density
-{% endhighlight %}
+```
 
 用Davidson method 求解本征值和本征向量：
 
-{% highlight matlab %}
+```matlab
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  Usage: Get lowest eigenvalue and cooresponding Evetor by Davidson's method
@@ -153,8 +148,7 @@ for i=1:iter  %"for loop": for faster convergent
   PSI = PSI(:,1:(N/2));
   E = E(1:(N/2)); %Pick lowest N/2 eigen vectors and values
 end
-  
-{% endhighlight %}
+```
 
 ## 结果 
 
