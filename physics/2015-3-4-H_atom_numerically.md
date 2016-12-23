@@ -1,13 +1,8 @@
----
-layout: post
-title: Solving Hydrogen atom numerically with 14 lines of Matlab code
-tags: 
-- quantum mechanics
----
+# Solving Hydrogen atom numerically with 14 lines of Matlab code
 
 Let's have a look the code first(They were wrote by Mikael Kuisma in [this vedio](https://www.youtube.com/watch?v=bW44gCulrvI)):
 
-{% highlight matlab %}
+```matlab
 g = 40; g3 = g^3;
 p = linspace(-4, 4, g);         % one dimensiton space lattice
 [X, Y, Z] = meshgrid(p, p, p);  % three dimension space lattice
@@ -24,7 +19,7 @@ H = -0.5 * L3 + spdiags(Vext, 0, g3, g3);  % Hamiltonian of H atom
 %disp(['Total energy for Hydrogen atom' num2str(E*27.21, 5) 'eV']); %display result
 %PSI_3 = reshape(PSI, [g,g,g]);
 scatter3(X,Y,Z,PSI.^2 *9000);
-{% endhighlight %}
+```
 
 These code calculated the  ground state energy of Hydrogen atom(You can run the code online in [this website](http://www.tutorialspoint.com/matlab/try_matlab.php)).
 
